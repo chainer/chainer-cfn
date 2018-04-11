@@ -1,0 +1,5 @@
+\.*.json
+.python-version
+build/
+.idea
+**/__pycache__

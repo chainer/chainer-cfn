@@ -1,0 +1,2 @@
+awacs
+troposphere[policy]==2.2.1
