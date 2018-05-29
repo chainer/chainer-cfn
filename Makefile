@@ -1,8 +1,8 @@
-VERSION=0.1.0
+VERSION=0.1.1-develop
 
 ifeq ($(STAGE),staging)
 	PUBLISH_TO = s3://chainer-cfn-staging
-	S3_ACL = 
+	S3_ACL =
 endif
 
 ifeq ($(STAGE),production)
