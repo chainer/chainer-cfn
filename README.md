@@ -17,11 +17,15 @@ Please see [template/main.py](template/main.py) for detailed resource definition
 
 ## The Latest Published Template
 
+- [chainer-cfn-v 0.1.0.template](https://s3-us-west-2.amazonaws.com/chainer-cfn/chainer-cfn-v0.1.0.template)
+
+
 ## Quick Start
 
 Please also refer to our blog: [ChainerMN on AWS with CloudFormation](https://chainer.org/general/2018/06/01/chainermn-on-aws-with-cloudformation.html)
 
 [![launch stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=chainermn-sample&templateURL=https://s3-us-west-2.amazonaws.com/chainer-cfn/chainer-cfn-v0.1.0.template)
+
 
 ## Development Manual
 ### How to build a template
@@ -60,6 +64,11 @@ make publish STAGE=(production|staging)
 ```
 
 ## Release Notes
+### Version 0.1.0
+- Initial release
+  - Based on [Chainer AMI `0.1.0`](https://github.com/chainer/chainer-ami)
+- Released Template
+  - [chainer-cfn-v 0.1.0.template](https://s3-us-west-2.amazonaws.com/chainer-cfn/chainer-cfn-v0.1.0.template)
 
 ## License
 
