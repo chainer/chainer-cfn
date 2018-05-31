@@ -1,5 +1,5 @@
 # chainer-cfn: Cloudformation Template for ChainerMN on AWS
-This template automates to build ChainerMN cluster on AWS.  The overview of AWS resources to be created by this template are below:
+This template automates to build ChainerMN cluster on AWS. The overview of AWS resources to be created by this template are below:
 
 - VPC and Subnet where cluster places (you can configure existing VPC/Subnet)
 - S3 Bucket for sharing ephemeral ssh-key which is used to communicate among MPI processes in the cluster
@@ -9,6 +9,7 @@ This template automates to build ChainerMN cluster on AWS.  The overview of AWS 
   - `N (>=0)` worker instnaces (via AutoScalingGroup)
   - `chainer` user to run mpi job in each instance
   - `hostfile` to run mpi job in each instance
+  - All the instances are launched from [Chainer AMI](https://github.com/chainer/chainer-ami)
 - (Option) Amazon Elastic Filesystem (you can configure existing filesystem)
   -  This is mounted on cluster instances automatically to share your code and data.
 - Several required SecurityGroups, IAM Role
